@@ -1,0 +1,77 @@
+:root {
+  --segment-on: red;
+
+  --segment-off: rgb(50, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.main {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.display {
+  background-color: black;
+  width: 145px;
+  margin-top: 50px;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%);
+}
+
+.segment {
+  background-color: var(--segment-off);
+  border-radius: 50px;
+  transition: 0.25s;
+}
+
+.vertical-segment {
+  width: 20px;
+  height: 100px;
+}
+
+.horizontal-segment {
+  height: 20px;
+  width: 100px;
+}
+
+#A {
+  margin: auto;
+}
+
+#C {
+  position: absolute;
+  top: 140px;
+  right: 0;
+}
+
+#D {
+  margin: auto;
+}
+
+#E {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+#G {
+  margin: auto;
+}
+
+.segment-on {
+  background-color: var(--segment-on);
+  box-shadow: 0 0 10px 0.1px var(--segment-on);
+}
